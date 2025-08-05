@@ -11,7 +11,7 @@
 
 ## 🎥 Demo Video
 
-![Agentic AI Platform Demo](Agentic%20AI%20Platform.mp4)
+![Agentic AI Platform Demo](Agentic%20AI%20Platform%20Demo.gif)
 
 *Watch the platform in action - showcasing real-time multi-agent orchestration, streaming responses, and intelligent knowledge synthesis.*
 
