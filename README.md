@@ -11,7 +11,9 @@
 
 ## 🎥 Demo Video
 
-*Demo video coming soon - showcasing real-time multi-agent orchestration, streaming responses, and intelligent knowledge synthesis.*
+![Agentic AI Platform Demo](Agentic%20AI%20Platform.mp4)
+
+*Watch the platform in action - showcasing real-time multi-agent orchestration, streaming responses, and intelligent knowledge synthesis.*
 
 **Repository**: https://github.com/ibiggy9/agentic-knowledge-base
 
