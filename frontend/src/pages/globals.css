@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-roboto);
+  --font-mono: monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-roboto), Roboto, 'Segoe UI', sans-serif;
+}
+
+/* Safari-specific fixes */
+.safari body {
+  background-color: #23272A !important; /* Force background color in Safari */
+}
+
+.safari .bg-gradient-to-b,
+.safari .bg-gradient-to-r,
+.safari .bg-gradient-to-br {
+  background-image: none !important; /* Disable gradients in Safari */
+}
+
+.safari .from-\[\#2C2F33\] {
+  background-color: #2C2F33 !important;
+}
+
+.safari .to-\[\#292B2F\] {
+  background-color: #292B2F !important;
+}
+
+.safari .bg-\[\#36393F\] {
+  background-color: #36393F !important;
+}
+
+.safari .border-indigo-700 {
+  border-color: #4338ca !important;
+}
+
+/* Additional Safari text fixes */
+.safari .text-transparent.bg-clip-text {
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+
+/* Additional force color fixes for Safari */
+.safari .bg-\[\#23272A\] {
+  background-color: #23272A !important;
+}
+
+.safari .bg-\[\#292C31\] {
+  background-color: #292C31 !important;
+}
+
+.safari .bg-\[\#2F3136\] {
+  background-color: #2F3136 !important;
+}
+
+/* Global scrollbar styling for Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  border: 1px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #333333 #1a1a1a;
+}
+
+/* Enhanced Safari scrollbar styling */
+@supports (-webkit-touch-callout: none) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #1a1a1a !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333333 !important;
+    border-radius: 4px;
+    border: 1px solid #1a1a1a !important;
+  }
+  
+  /* Force background on main elements for Safari */
+  body {
+    background-color: #23272A !important;
+  }
+  
+  .prose pre {
+    background-color: #2F3136 !important;
+  }
+  
+  textarea {
+    background-color: transparent !important;
+  }
+}
+
+/* Force user message bubbles to show properly in Safari */
+.safari [style*="background-image: linear-gradient"] {
+  background: #4338ca !important; /* Fallback solid color */
+}
+
+/* Force hover styles in Safari */
+.safari button:hover {
+  opacity: 0.9 !important;
+}
+
+/* Keep your existing textarea-specific styling if you want textareas to look different */

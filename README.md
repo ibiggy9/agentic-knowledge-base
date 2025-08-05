@@ -9,7 +9,11 @@
 
 > **A sophisticated agentic AI platform demonstrating advanced multi-agent orchestration, real-time data processing, and intelligent knowledge synthesis capabilities.**
 
-![Agentic AI Platform Demo](https://via.placeholder.com/800x400?text=Agentic+AI+Knowledge+Base+Platform)
+## 🎥 Demo Video
+
+https://github.com/your-username/agentic-ai-knowledge-base/assets/your-user-id/Agentic%20AI%20Platform.mp4
+
+*Watch the platform in action - showcasing real-time multi-agent orchestration, streaming responses, and intelligent knowledge synthesis.*
 
 ## 🎯 Project Overview
 
@@ -85,7 +89,7 @@ graph TB
 ## 🛠️ Tech Stack
 
 ### Frontend
-n- **Framework**: Next.js 15.2.1 with React 19
+- **Framework**: Next.js 15.2.1 with React 19
 - **Styling**: Tailwind CSS 4, NextUI, Framer Motion
 - **State Management**: React Hooks with custom state management
 - **Real-time Features**: Server-Sent Events for streaming responses

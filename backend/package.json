@@ -1,0 +1,31 @@
+{
+  "name": "agentic-ai-backend",
+  "version": "1.0.0",
+  "description": "Backend services for the Agentic AI Knowledge Base Platform",
+  "main": "api/gateway/app.py",
+  "scripts": {
+    "start": "cd api/gateway && uvicorn app:app --host 0.0.0.0 --port 8000 --reload",
+    "start:rfx": "cd agents/rfx_analyzer && python server.py",
+    "start:documents": "cd agents/document_processor && python server.py",
+    "start:samsara": "cd agents/samsara_integration && python server.py",
+    "start:raw-data": "cd agents/raw_data_processor && python server.py",
+    "test": "python -m pytest",
+    "install": "pip install -e ."
+  },
+  "keywords": [
+    "ai",
+    "mcp",
+    "fastapi",
+    "python",
+    "agentic-ai"
+  ],
+  "author": "Your Name",
+  "license": "Proprietary",
+  "dependencies": {
+    "fastapi": "0.115.4",
+    "uvicorn": "0.34.1",
+    "python-dotenv": "1.0.1",
+    "pytest": "8.1.1",
+    "pytest-asyncio": "0.23.5"
+  }
+} 
