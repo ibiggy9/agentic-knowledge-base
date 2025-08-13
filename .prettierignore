@@ -1,0 +1,17 @@
+node_modules
+.next
+dist
+build
+coverage
+**/.cache
+**/__pycache__
+*.egg-info
+*.log
+*.mp4
+*.gif
+.env
+**/.env
+**/.env.*
+backend/AgenticAiCore.egg-info
+
+
