@@ -1,3 +1,5 @@
+[![Agentic AI Platform Demo](assets/agentic-ai-platform-preview.gif)](assets/agentic-ai-platform.gif)
+
 ### Agentic AI Knowledge Base Platform
 
 [![Frontend](https://img.shields.io/badge/Frontend-Next.js%2015-blue)](https://nextjs.org)
